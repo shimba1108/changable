@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Changable 〜仲間と学習時間を共有できる SPA〜
 
-## Available Scripts
+【名前の由来】
+自分の最も大切にしている価値観である
+”人は先天的な能力に関わらず、後天的な努力ですべてを変えることができる”
+を一言で表現した名前
 
-In the project directory, you can run:
+Change + able = Changable
 
-### `yarn start`
+【開発までの経緯】
+コロナの影響でなかなか人と会えず、完全に独学でプログラミングの学習を行った結果、モチベーションが保てずに挫折しそうになった経験が何度もあった。その解決策として、これまでの人生経験の中で継続による成功体験を得ることのできた環境を
+分析したところ、学習を習慣化できた主たる要因は”仲間との共同学習”であるとの仮説に至った。この”学習時間の共有は学習意欲の増加につながる”という仮説実証のために、Changable の開発に乗り出した。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+【ゲストログイン用】
+email : test@gmail.com
+pass : test2020
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+【実装機能一覧】
+・React.js × Redux × Firebase での SPA 開発
+・hooks を用いた関数コンポーネントでの実装
+・react-router-dom を用いた画面遷移
+・レスポンシブ対応
+・アカウント登録機能
+・ログイン、ログアウト機能
+・スレッド作成機能
+・メッセージ、画像送信機能
+・タイマー機能（お気に入り）
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+【実装予定機能一覧】
+・いいね機能
+・ユーザーごとの学習記録管理
+・チーム作成
