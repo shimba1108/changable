@@ -1,0 +1,85 @@
+.sidebar {
+  flex: 0.25;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  border-right: 1px solid gray;
+  /* background-color: #2f2f2f; */
+  background-color: #2f2f2f;
+}
+
+.sidebar_header {
+  display: flex;
+  /* flex: 1; */
+  /* height: 50px; */
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+
+.sidebar_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #2d4671;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.sidebar_input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+  color: white;
+  flex: 1;
+}
+
+.sidebar_button {
+  color: white !important;
+}
+
+.sidebar_button:hover {
+  color: #1e90ff;
+}
+
+.sidebar_threads {
+  overflow: scroll;
+  flex: 1;
+  /* height: 100vh !important; */
+  -ms-overflow-style: scroll;
+  scrollbar-width: none;
+}
+
+.siderbar_threads::-webkit-scrollbar {
+  display: none;
+}
+
+/* .sidebar_threads {
+  -ms-overflow-style: scroll;
+  scrollbar-width: none;
+} */
+
+.sidebar_bottom {
+  /* flex: 1; */
+  bottom: 0;
+  display: flex;
+  /* height: 50px; */
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  border-top: 1px solid gray;
+}
+
+.sidebar_bottom_avatar:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sidebar_bottom > button {
+  color: white;
+}
+
+.sidebar_bottom > button:hover {
+  color: #1e90ff;
+}

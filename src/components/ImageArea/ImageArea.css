@@ -1,0 +1,39 @@
+.image-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.image-preview {
+  display: flex;
+}
+
+.image-fn {
+  display: flex;
+  align-items: center;
+}
+
+.u-display-none {
+  display: none;
+}
+.img-preview > img {
+  width: 50px;
+  height: 30px;
+}
+
+.photo {
+  color: gray;
+  margin-right: 10px;
+}
+
+.photo:hover {
+  color: #1e90ff;
+}
+
+@media screen and (max-width: 469px) {
+  .img-preview > img {
+    width: 30px;
+    height: 10px;
+  }
+}

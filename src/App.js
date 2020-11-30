@@ -1,25 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SigninPage from "./pages/SigninPage";
+import SignupPage from "./pages/SignupPage";
+import { auth } from "./firebase";
+import { useSelector, useDispatch } from "react-redux";
+import { selectUser, login, logout } from "./features/userSlice";
+import Home from "./pages/Home";
+import Chats from "./components/Chats/Chats";
 
 function App() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        dispatch(
+          login({
+            uid: authUser.uid,
+            photo: authUser.photoURL,
+            email: authUser.email,
+            displayName: authUser.displayName,
+          })
+        );
+      } else {
+        dispatch(logout());
+      }
+    });
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        {user ? (
+          <Route path="/" component={Chats} exact />
+        ) : (
+          <Route path="/" component={Home} exact />
+        )}
+
+        <Route path="/signup" component={SignupPage} exact />
+        <Route path="/signin" component={SigninPage} exact />
+      </Switch>
+    </Router>
   );
 }
 

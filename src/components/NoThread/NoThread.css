@@ -1,0 +1,20 @@
+.no-thread {
+  background-color: darkgrey;
+
+  flex: 7.5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  display: flex;
+  align-items: flex-start;
+}
+
+.no-thread > h3 {
+  color: white;
+}

@@ -1,0 +1,51 @@
+.sidebarThread {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 0.1px solid#55565d;
+  /* border-top: 0.1px solid #55565d; */
+  color: white;
+  cursor: pointer;
+}
+
+.sidebarThread:hover {
+  background-color: #1e90ff;
+}
+
+.sidebarThread_details {
+  margin-left: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.sidebarThread_details > h3 {
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  /* word-wrap: break-all; */
+}
+
+.sidebarThread_details > p {
+  margin-top: 15px;
+  font-size: small;
+  height: 35px;
+  width: 150px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.sidebarThread_details > small {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.space {
+  height: 20px;
+}
