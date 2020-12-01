@@ -2,7 +2,7 @@ Changable
 〜仲間と学習時間を共有できる SPA〜
 
 【ゲストログイン用】
-email : test@gmail.com
+email : test@gmail.com、
 pass : test2020
 
 【名前の由来】
