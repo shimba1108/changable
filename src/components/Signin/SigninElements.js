@@ -91,6 +91,14 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  &:focus {
+    background-color: lightgray;
+  }
 `;
 
 export const FormButton = styled(Link)`
@@ -117,6 +125,10 @@ export const Text = styled(Link)`
   text-align: center;
   color: #fff;
   font-size: 14px;
+
+  &:hover {
+    color: lightgray;
+  }
 `;
 
 export const ButtonTo = styled(Link)`
@@ -129,10 +141,12 @@ export const ButtonTo = styled(Link)`
   outline: none;
   border: none;
   cursor: pointer;
+  padding-top: 5px;
 
   transition: all 0.2s ease-in-out;
 
   &:hover {
     transition: all 0.2s ease-in-out;
+    background-color: lightgray;
   }
 `;

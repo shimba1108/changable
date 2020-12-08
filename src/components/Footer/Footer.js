@@ -40,25 +40,25 @@ const Footer = () => {
                 <FooterLink to="/signin">Terms of Services</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>About us</FooterLinkTitle>
-                <FooterLink to="/signin">How it Works</FooterLink>
-                <FooterLink to="/signin">Testimonials</FooterLink>
-                <FooterLink to="/signin">Carreas</FooterLink>
+                <FooterLinkTitle>Discover</FooterLinkTitle>
+                <FooterLink to="/signin">Why we do</FooterLink>
+                <FooterLink to="/signin">study</FooterLink>
+                <FooterLink to="/signin">sharing</FooterLink>
                 <FooterLink to="/signin">Terms of Services</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>About us</FooterLinkTitle>
-                <FooterLink to="/signin">How it Works</FooterLink>
-                <FooterLink to="/signin">Testimonials</FooterLink>
-                <FooterLink to="/signin">Carreas</FooterLink>
+                <FooterLinkTitle>Services</FooterLinkTitle>
+                <FooterLink to="/signin">What we do</FooterLink>
+                <FooterLink to="/signin">Chatting</FooterLink>
+                <FooterLink to="/signin">Log share</FooterLink>
                 <FooterLink to="/signin">Terms of Services</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>About us</FooterLinkTitle>
-                <FooterLink to="/signin">How it Works</FooterLink>
-                <FooterLink to="/signin">Testimonials</FooterLink>
-                <FooterLink to="/signin">Carreas</FooterLink>
-                <FooterLink to="/signin">Terms of Services</FooterLink>
+                <FooterLinkTitle>SocialMedia</FooterLinkTitle>
+                <FooterLink to="/signin">Facebook</FooterLink>
+                <FooterLink to="/signin">Instagram</FooterLink>
+                <FooterLink to="/signin">YouTube</FooterLink>
+                <FooterLink to="/signin">Twitter</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
